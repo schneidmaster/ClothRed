@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.email = "cmdjackryan@gmail.com"
   s.platform = Gem::Platform::RUBY
   s.summary = "RedCloth in reverse: Converting HTML into Textile markup"
-  s.files = FileList["{lib,test}/**/*"].exclude("nbproject",".svn").to_a
+  s.files = Dir.glob("{lib,test}/**/*").exclude("nbproject",".svn").to_a
   s.autorequire = "clothred"
   s.has_rdoc = true
   s.rubyforge_project ="clothred"
